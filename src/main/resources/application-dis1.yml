@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: ms-dicvoery
+
+server:
+  port: 8771
+
+eureka:
+  instance:
+    hostname: ms-discovery1
+    prefer-ip-address: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://user:password@ms-discovery2:8772/eureka/
