@@ -100,7 +100,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 		</profile>
-		<profile>
+		<!--<profile>
 			<id>test</id>
 			<properties>
 				<image-name>ms-discovery-test</image-name>
@@ -111,6 +111,6 @@
 			<properties>
 				<image-name>ms-discovery-pro</image-name>
 			</properties>
-		</profile>
+		</profile>-->
 	</profiles>
 </project>
