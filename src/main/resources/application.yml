@@ -3,16 +3,43 @@ spring:
     name: ms-dicvoery
 #  profiles:
 #    active: local
-
+  security:
+    user:
+      name: root
+      password: 123456
 server:
   port: 8761
 
+management:
+  endpoint:
+    health:
+      enabled: false
+    beans:
+      enabled: false
+    conditions:
+      enabled: false
+    info:
+      enabled: false
+    metrics:
+      enabled: false
+    mappings:
+      enabled: false
+    shutdown:
+      enabled: false
+    httptrace:
+      enabled: false
+
 eureka:
   instance:
-    hostname: localhost
+    hostname: ms-discovery
     prefer-ip-address: true
+    non-secure-port: 8761
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://user:password@${eureka.instance.hostname}:${server.port}/eureka/
+       defaultZone: http://user:password@${eureka.instance.hostname}:${server.port}/eureka/
+#  server:
+#    enable-self-preservation: false
+#    wait-time-in-ms-when-sync-empty: 0
+#      defaultZone: http://user:password@${spring.application.name}:${server.port}/eureka/
