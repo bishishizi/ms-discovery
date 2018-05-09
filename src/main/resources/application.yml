@@ -38,7 +38,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-       defaultZone: http://user:password@${spring.application.name}:${server.port}/eureka/
+       defaultZone: http://user:password@${eureka.instance.hostname}:${server.port}/eureka/
 #  server:
 #    enable-self-preservation: false
 #    wait-time-in-ms-when-sync-empty: 0
