@@ -1,5 +1,0 @@
-spring:
-  security:
-    user:
-      name: root
-      password: 123456
