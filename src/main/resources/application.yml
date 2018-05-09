@@ -9,7 +9,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: ms-dicvoery
     prefer-ip-address: true
   client:
     registerWithEureka: false
